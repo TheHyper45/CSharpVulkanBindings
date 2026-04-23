@@ -1,0 +1,14 @@
+* text=auto
+*.dll binary
+*.so binary
+*.exe binary
+*.a binary
+*.db binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.bmp binary
+*.gif binary
+*.fbx binary
+*.blend binary
+*.blend1 binary
