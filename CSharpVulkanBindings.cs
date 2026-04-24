@@ -55,9 +55,9 @@ public sealed class CSharpVulkanBindingsGenerator : IIncrementalGenerator
     builder.AppendLine("/// </auto-generated>");
     builder.AppendLine();
 
-    builder.AppendLine("namespace CSharpVulkanBindings;");
+    builder.AppendLine("namespace TheHyper45.CSharpVulkanBindings;");
     builder.AppendLine();
-    builder.AppendLine("public static partial class Vulkan {");
+    builder.AppendLine("public static class Vulkan {");
     {
       builder.AppendLine("\tpublic static uint VK_MAKE_API_VERSION(uint variant,uint major,uint minor,uint patch) => (variant << 29) | (major << 22) | (minor << 12) | patch;");
       builder.AppendLine("\tpublic static uint VK_API_VERSION_VARIANT(uint version) => version >> 29;");

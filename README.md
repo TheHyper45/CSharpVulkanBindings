@@ -1,7 +1,7 @@
 # C# Vulkan Bindings Generator
 
 ## Description
-This project is a source generator that consumes <a href="https://github.com/KhronosGroup/Vulkan-Docs/blob/main/xml/vk.xml">`vk.xml`</a> and produces a file named `Vulkan.g.cs` that contains a single static partial class `Vulkan` inside `CSharpVulkanBindings` namespace.
+This project is a source generator that consumes <a href="https://github.com/KhronosGroup/Vulkan-Docs/blob/main/xml/vk.xml">`vk.xml`</a> and produces a file named `Vulkan.g.cs` that contains a single static partial class `Vulkan` inside `TheHyper45.CSharpVulkanBindings` namespace.
 
 The reason for me making this project is simple: all other C# Vulkan bindings libraries I could find presume the way of loading the Vulkan system shared library. I just wanted a library that takes a pointer to `vkGetInstanceProcAddr` and loads all pointers to Vulkan commands for me without caring how I obtained `vkGetInstanceProcAddr`.
 
@@ -30,7 +30,7 @@ The consuming project need to have enabled `unsafe` blocks. To enable `unsafe` c
 ```C#
 // Uses implicit usings.
 using System.Runtime.InteropServices;
-using static CSharpVulkanBindings.Vulkan;
+using static TheHyper45.CSharpVulkanBindings.Vulkan;
 
 unsafe
 {
